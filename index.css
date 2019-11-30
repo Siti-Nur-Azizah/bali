@@ -1,0 +1,22 @@
+/* *
+    ">" untuk memilih fokus ke dari parent 
+    menuju child tertentu didalamnya
+    contoh .s>.s
+    "~" untuk memilih  component sejajar 
+    contoh .s~.s
+    "+" untuk memilih component 1 sejajar dibawahnya
+    contoh .s+.s
+* */
+
+/** global fontsize **/
+/**
+body{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+**/
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+:root{
+  font-size: 20px;
+  font-family: 'Pacifico', sans-serif;
+}
