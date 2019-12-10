@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Background from './bg.png';
-import Foto from "./storage/Bali1.png";
-
+import Background from './gambar.png';
+//import { Button } from "./components";
 import {
     BrowserRouter as Router,
     Switch,
@@ -31,21 +30,20 @@ class App extends Component {
                             <Route path="/">
                                 <div style={styles.container}>
                                     <div>
-                                        <center>  <img src={Foto} alt="" style={{ height: 168, width: 150 }} /></center>
+                                        
                                     </div>
                                     <div style={matches ? styles.h1 : styles.h2}>
-                                        A Better way to <div style={styles.travel}>travel  to bali</div>
+                                        Save your Earth<div style={styles.travel}></div>
                                     </div>
-                                    <div style={styles.wrapperScroll}>
-                                        <p style={styles.textScroll}>Cheapest and Easyer</p>
+                                    <div style={styles.subTittle}>
+                                    Menanam satu pohon,menghasilkan sejuta manfaat
                                     </div>
                                     <div style={styles.wrapperInput}>
 
-                                        <button style={styles.button1} >Red more</button>
-                                        <button style={styles.button} >Reservation</button>
-                                    </div>
-
-
+                                        <button style={styles.button1} >Donasi pohon</button>
+                                        <button style={styles.button} >Hubungi Kami</button>
+                                        
+                                </div>
                                 </div>
 
                             </Route>
@@ -65,13 +63,13 @@ const styles = {
         display: 'flex',
         backgroundImage: `url(${Background})`,
         /*full height*/
-        height: '100%',
+        height: '500',
         backgoundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
     },
     overlay: {
-        backgroundColor: "rgba(81, 77, 67, 0.7)",
+        
         height: h,
         width: '100%'
     },
@@ -93,20 +91,19 @@ const styles = {
     },
     h1: {
         alignSelf: 'center',
-        marginTop: 50,
-        color: 'white',
+        marginTop: 250,
+        color: 'black',
         fontSize: 40,
         textAlign: 'center',
         maxWidth: 300,
-        fontFamily: 'pacifico',
-
-        color: '#FFFFFF'
-
+        fontFamily: 'pangolin',
+        marginRight:700,
+      
     },
     h2: {
         alignSelf: 'center',
-        marginTop: 50,
-        color: 'white',
+        marginTop: 250,
+        color: 'black',
         fontSize: 36,
 
         textAlign: 'center'
@@ -116,19 +113,26 @@ const styles = {
         alignSelf: 'center',
         marginTop: 60
     },
+    subTittle:{
+        color: 'black',
+        textAlign: 'center',
+        fontFamily: "Roboto",
+        marginTop: 0,
+        marginRight:550,
+    },
+
     bgInput: {
         display: 'flex',
-        backgroundColor: '#fff',
+        backgroundColor: '#00B894',
         borderRadius: 40,
         marginRight: 16
     },
     input: {
-        position: 'absolute',
         width: '150px',
         height: '40px',
         left: '400px',
         top: '481px',
-        fontFamily: 'pacifico',
+        fontFamily: 'pangolin',
         background: "rgba(22, 20, 50, 0.80)",
     },
     input2: {
@@ -136,32 +140,39 @@ const styles = {
         padding: 10,
         borderStyle: 'none',
         fontSize: 14,
-        position: 'absolute',
         width: '1280px',
         height: '720px',
         left: '0px',
         top: '0px',
     },
     button: {
-        position: 'absolute',
-        width: '156px',
+        width: '175px',
         height: '46px',
         left: '646px',
         top: '481px',
-        fontFamily: 'pacifico',
-        background: '#FCB371',
+        fontFamily: 'pangolin',
+        background: 'transparet',
+        marginLeft: 10,
+        marginRight: 580,
+        paddingLeft: 40,
+        paddingRight: 40,
+        border:'solid  #00B894'
+        
     },
     button1: {
-        position: 'absolute',
-        width: '156px',
+        width: '175px',
         height: '46px',
         left: '450px',
         top: '481px',
-        fontFamily: 'pacifico',
-        background: '#FFFF',
-    },
-    wrapperScroll: {
-        display: 'flex', alignSelf: 'center', marginTop: 10, flexDirection: 'column'
+        fontFamily: 'pangolin',
+        backgroundColor:' #00B894',
+        borderColor: 'green',
+        borderRadius:3,
+        marginLeft: 10,
+        marginRight: 10,
+        paddingLeft: 40,
+        paddingRight: 40
+       
     },
     textScroll: {
         color: '#fff', maxWidth: 200, textAlign: 'center'
@@ -181,7 +192,7 @@ const styles = {
     },
     Link: {
         textDecoration: 'none'
-    }
+    },
 };
 
 export default App;
